@@ -35,6 +35,26 @@
   background-color: #cd9042;
 }
 
+.header_optionLineOne {
+  font-size: 10px;
+}
+
+.header_optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header_optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header_basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .header_nav {
   display: flex;
   justify-content: space-evenly;
