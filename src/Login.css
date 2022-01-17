@@ -44,4 +44,21 @@
   font-size: 12px;
 }
 
+.signIn_button {
+  background: #f0c14b;
+  width: 100%;
+  height: 30px;
+  border-radius: 2px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+}
 
+.register_button {
+  border-radius: 2px;
+  width: 100%;
+  height: 25px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: darkgray;
+}
