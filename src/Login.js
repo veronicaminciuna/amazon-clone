@@ -12,14 +12,15 @@ function Login() {
         />
       </Link>
       <div className="login_container">
-          <h1>Sign In</h1>
-          <form>
-              <h5>
-                  Email
-              </h5>
-          </form>
-      </div>
+        <h1>Sign In</h1>
+        <form>
+          <h5>Email</h5>
+          <input type="text" />
+          <h5>Password</h5>
 
+          <input type="password" />
+        </form>
+      </div>
     </div>
   );
 }
