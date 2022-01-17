@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./Login.css";
-import { Link } from "react-router-dom";
-import { auth } from './firebase';
+import { Link, useNavigate } from "react-router-dom";
+import { auth } from "./firebase";
 
 function Login() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const signIn = (e) => {
@@ -15,7 +16,9 @@ function Login() {
     auth
       .createUserWithEmailAndPassword(email, password)
       .then((auth) => {
-        console.log(auth);
+        if (auth) {
+          navigate("/");
+        }
       })
       .catch((error) => alert(error.message));
   };
