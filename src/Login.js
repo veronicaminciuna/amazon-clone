@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
+import { auth } from './firebase';
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -10,6 +11,13 @@ function Login() {
   };
   const register = (e) => {
     e.preventDefault();
+
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((auth) => {
+        console.log(auth);
+      })
+      .catch((error) => alert(error.message));
   };
 
   return (
@@ -36,15 +44,18 @@ function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button type="submit" onClick={signIn}></button>
-          <button className="signIn_button">Sign In</button>
+          <button type="submit" onClick={signIn} className="signIn_button">
+            Sign In
+          </button>
         </form>
         <p>
           By signing-in you agree to the AMAZON CLONE's Conditions of Use &
           Sale. Please see our Privacy Notice, our Cookies Notice and our
           Interest-Based Ads Notice.
         </p>
-        <button className="register_button">Create your Amazon Account</button>
+        <button onClick={register} className="register_button">
+          Create your Amazon Account
+        </button>
       </div>
     </div>
   );
