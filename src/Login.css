@@ -12,3 +12,13 @@
   align-items: center;
   background-color: white;
 }
+
+.login_container {
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 20px;
+}
