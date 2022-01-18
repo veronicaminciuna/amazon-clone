@@ -1,6 +1,6 @@
 import { Link } from "@material-ui/core";
 import { useElements, useStripe, CardElement } from "@stripe/react-stripe-js";
-import React from "react";
+import React, { useState } from "react";
 import CurrencyFormat from "react-currency-format";
 import CheckoutProduct from "./CheckoutProduct";
 import "./Payment.css";
@@ -13,10 +13,10 @@ function Payment() {
   const stripe = useStripe();
   const elements = useElements();
 
-  const [succeeded, setSucceeded] = useStateValue(false);
-  const [processing, setProcessing] = useStateValue("");
-  const [error, setError] = useStateValue(null);
-  const [disabled, setDisabled] = useStateValue(true);
+  const [succeeded, setSucceeded] = useState(false);
+  const [processing, setProcessing] = useState("");
+  const [error, setError] = useState(null);
+  const [disabled, setDisabled] = useState(true);
 
   const handleSubmit = (e) => {};
   const handleChange = (e) => {
