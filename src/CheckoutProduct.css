@@ -17,9 +17,9 @@
 }
 
 .checkoutProduct_image {
+  width: 130px;
+  height: 130px;
   object-fit: contain;
-  width: 180px;
-  height: 180px;
 }
 
 .checkoutProduct_rating {
