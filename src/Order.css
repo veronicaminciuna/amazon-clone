@@ -12,7 +12,7 @@
   right: 20px;
 }
 
-
 .order_total {
-    font-weight: 800;
+  font-weight: 500;
+  text-align: right;
 }
