@@ -8,6 +8,7 @@ import { getBasketTotal } from "./reducer";
 import { useStateValue } from "./stateProvider";
 import axios from "./axios";
 import { useNavigate } from "react-router-dom";
+import { db } from "./firebase";
 
 function Payment() {
   const navigate = useNavigate();
@@ -47,12 +48,22 @@ function Payment() {
         },
       })
       .then(({ paymentIntent }) => {
+        db.collection("users")
+          .doc(user?.id)
+          .collection("orders")
+          .doc(paymentIntent.id)
+          .set({
+            basket: basket,
+            amount: paymentIntent.amount,
+            created: paymentIntent.created,
+          });
+
         setSucceeded(true);
         setError(null);
         setProcessing(false);
         dispatch({
-          type: 'EMPTY_BASKET'
-        })
+          type: "EMPTY_BASKET",
+        });
         navigate("/orders");
       });
   };
