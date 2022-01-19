@@ -36,6 +36,7 @@ function Payment() {
   }, [basket]);
 
   console.log("The secret is", clientSecret);
+  console.log("this is user", user);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -49,7 +50,7 @@ function Payment() {
       })
       .then(({ paymentIntent }) => {
         db.collection("users")
-          .doc(user?.id)
+          .doc(user?.uid)
           .collection("orders")
           .doc(paymentIntent.id)
           .set({
