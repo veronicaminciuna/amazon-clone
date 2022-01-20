@@ -14,26 +14,26 @@ function Home() {
         <div className="home_row">
           <Product
             id="12321341"
-            title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
-            price={11.96}
+            title="Originals: How Non-Conformists Move the World"
+            price={13.99}
             rating={5}
-            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"
+            image="https://images-na.ssl-images-amazon.com/images/I/51Fl0Z+4e-S._SX324_BO1,204,203,200_.jpg"
           />
           <Product
             id="49538094"
-            title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
-            price={239.0}
+            title="Echo Dot (4th Gen) | Smart speaker with clock and Alexa | Twilight Blue"
+            price={59.99}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
+            image="https://images-na.ssl-images-amazon.com/images/I/71b9icxgIgL._AC_SX679_.jpg"
           />
         </div>
         <div className="home_row">
           <Product
             id="4903850"
-            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
-            price={199.99}
+            title="Sony DSC-HX99 Compact Digital 18.2 MP Camera with 24-720 mm Zoom, 4K and Touchpad"
+            price={449.95}
             rating={3}
-            image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
+            image="https://images-na.ssl-images-amazon.com/images/I/61SawvfVo7L._AC_SX679_.jpg"
           />
           <Product
             id="23445930"
@@ -52,11 +52,18 @@ function Home() {
         </div>
         <div className="home_row">
           <Product
-            id="90829332"
-            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
-            price={1094.98}
+            id="12321357"
+            title="SAMSUNG 75-Inch Class Crystal UHD AU8000 Series - 4K UHD HDR Smart TV with Alexa Built-in"
+            price={947.99}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
+            image="https://images-na.ssl-images-amazon.com/images/I/71LJJrKbezL._AC_SX679_.jpg"
+          />
+          <Product
+            id="49538006"
+            title="Samsung Galaxy Tab S6 Lite 10.4’’ Touchscreen (2000x1200) WiFi Tablet, Octa Core Exynos 9610 Processor, 4GB RAM, 64GB Memory, 5MP Front and 8MP Rear Camera, Bluetooth, Android 10 w/S Pen & Cover"
+            price={337.56}
+            rating={4}
+            image="https://images-na.ssl-images-amazon.com/images/I/51mYti4TE3L._AC_SX679_.jpg"
           />
         </div>
       </div>

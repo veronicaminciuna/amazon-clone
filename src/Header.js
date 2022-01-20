@@ -26,6 +26,7 @@ function Header() {
         <input className="header_searchInput" type="text" />
         <SearchIcon className="header_searchIcon" />
       </div>
+      
       <div className="header_nav">
         <Link to={!user && "/login"}>
           <div onClick={handleAuthentication} className="header-option">
@@ -37,14 +38,19 @@ function Header() {
             </span>
           </div>
         </Link>
-        <div className="header-option">
-          <span className="header_optionLineOne">Returns </span>
-          <span className="header_optionLineTwo">& Orders</span>
-        </div>
+
+        <Link to="/orders">
+          <div className="header-option">
+            <span className="header_optionLineOne">Returns </span>
+            <span className="header_optionLineTwo">& Orders</span>
+          </div>
+        </Link>
+
         <div className="header-option">
           <span className="header_optionLineOne">Your</span>
           <span className="header_optionLineTeo"> Prime</span>
         </div>
+
         <Link to="/checkout">
           <div className="header_optionBasket">
             <ShoppingBasketIcon />
